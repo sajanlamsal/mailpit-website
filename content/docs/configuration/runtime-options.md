@@ -111,6 +111,10 @@ Mailpit uses the HTTP Content Security Policy (CSP) method to block these. This 
 Allow Link Check, HTML Check and UI Screenshot to access internal (non-public) IPs when checking links or fetching remote assets (images, stylesheets, etc.). This is required for those features to work in test environments that use internal hostnames or IPs. Use caution in production - enabling this could allow SSRF (Server‑Side Request Forgery) if your Mailpit UI or SMTP are reachable by untrusted users.
 {{< /option >}}
 
+{{< option flag="disable-link-check-rate-limit" env="MP_DISABLE_LINK_CHECK_RATE_LIMIT" default="false" added="v1.30.3" >}}
+Disable the rate limit for link checking ([see docs](../../usage/link-check/#rate-limiting)).
+{{< /option >}}
+
 {{< option flag="enable-spamassassin" env="MP_ENABLE_SPAMASSASSIN" default="false" >}}
 Enable SpamAssassin integration for message spamminess score ([see docs](../spamassassin/)).
 {{< /option >}}
