@@ -20,6 +20,7 @@ The Mailpit search has a number of features, including filtering by `To`, `From`
 -   `subject:"john doe"` - has "john doe" in the subject line
 -   `message-id:12345.678910.JavaMail.j2ee@localhost` - search by Message-Id
 -   `tag:host-1` - messages tagged with `host-1`
+-   `username:service-a` - messages sent by the authenticated SMTP/Send API username `service-a` (exact match), used by the [separate mailboxes](../mailboxes/) feature
 
 ## Combining filters
 
