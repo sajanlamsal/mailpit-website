@@ -1,4 +1,4 @@
-baseURL: 'https://mailpit.axllent.org/'
+baseURL: 'https://mailpit.docs.jobins.dev/'
 languageCode: 'en'
 title: 'Mailpit'
 outputs:
